@@ -1,0 +1,200 @@
+[
+    {
+        "id": 1,
+        "title": "Amazing Beach Vacation",
+        "location": "Bahamas",
+        "duration": "7 days",
+        "price": "$999",
+        "participants": "2 persons",
+        "inclusions": "All inclusive",
+        "description": "Enjoy a wonderful beach vacation in the beautiful Bahamas. This deal includes flights and a luxurious stay in a beachfront hotel. Experience the pristine beaches, crystal-clear waters, and vibrant local culture. With all-inclusive services, you can relax and enjoy your holiday without any worries. Perfect for couples looking for a romantic getaway or friends wanting to escape to paradise.",
+        "image": "images/deal1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "City Adventure",
+        "location": "New York",
+        "duration": "5 days",
+        "price": "$799",
+        "participants": "1 person",
+        "inclusions": "Breakfast included",
+        "description": "Experience the bustling city life of New York with this exciting adventure package. This deal includes flights and a comfortable stay in a centrally located hotel. Explore famous landmarks, enjoy world-class dining, and immerse yourself in the vibrant culture of the Big Apple. Perfect for solo travelers looking for an urban escape.",
+        "image": "images/deal2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Mountain Retreat",
+        "location": "Swiss Alps",
+        "duration": "10 days",
+        "price": "$1499",
+        "participants": "4 persons",
+        "inclusions": "All inclusive",
+        "description": "Escape to the mountains with this retreat in the Swiss Alps. Enjoy hiking, skiing, and breathtaking views. This deal includes flights and accommodation in a cozy mountain lodge.",
+        "image": "images/deal3.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Beach Bonanza",
+        "location": "Hawaii",
+        "duration": "7 days",
+        "price": "$1099",
+        "participants": "3 persons",
+        "inclusions": "All inclusive",
+        "description": "Experience the best of Hawaii with this beach bonanza deal. Includes flights, hotel stay, and a range of water activities.",
+        "image": "images/deal4.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Urban Escape",
+        "location": "Tokyo",
+        "duration": "5 days",
+        "price": "$699",
+        "participants": "1 person",
+        "inclusions": "Breakfast included",
+        "description": "Discover the vibrant city of Tokyo with this urban escape package. Includes flights, accommodation, and breakfast.",
+        "image": "images/deal5.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Luxury Resort",
+        "location": "Maldives",
+        "duration": "10 days",
+        "price": "$1599",
+        "participants": "4 persons",
+        "inclusions": "All inclusive",
+        "description": "Relax in luxury at this resort in the Maldives. This all-inclusive deal includes flights, accommodation, and all meals.",
+        "image": "images/deal6.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Cultural Journey",
+        "location": "Rome",
+        "duration": "7 days",
+        "price": "$999",
+        "participants": "2 persons",
+        "inclusions": "All inclusive",
+        "description": "Explore the historical and cultural landmarks of Rome. This deal includes flights, hotel stay, and guided tours.",
+        "image": "images/deal7.jpg"
+    },
+    {
+        "id": 8,
+        "title": "City Break",
+        "location": "Paris",
+        "duration": "5 days",
+        "price": "$799",
+        "participants": "1 person",
+        "inclusions": "Breakfast included",
+        "description": "Enjoy a romantic city break in Paris. This deal includes flights, accommodation, and breakfast.",
+        "image": "images/deal8.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Adventure Awaits",
+        "location": "New Zealand",
+        "duration": "10 days",
+        "price": "$1499",
+        "participants": "4 persons",
+        "inclusions": "All inclusive",
+        "description": "Experience the thrill of adventure in New Zealand. Includes flights, accommodation, and various outdoor activities.",
+        "image": "images/deal9.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Tropical Paradise",
+        "location": "Fiji",
+        "duration": "7 days",
+        "price": "$1099",
+        "participants": "3 persons",
+        "inclusions": "All inclusive",
+        "description": "Relax in the tropical paradise of Fiji. This deal includes flights, hotel stay, and all meals.",
+        "image": "images/deal10.jpg"
+    },
+    {
+        "id": 11,
+        "title": "Solo Adventure",
+        "location": "Iceland",
+        "duration": "5 days",
+        "price": "$699",
+        "participants": "1 person",
+        "inclusions": "Breakfast included",
+        "description": "Explore the unique landscapes of Iceland. This deal includes flights, accommodation, and breakfast.",
+        "image": "images/deal11.jpg"
+    },
+    {
+        "id": 12,
+        "title": "Exotic Escape",
+        "location": "Thailand",
+        "duration": "10 days",
+        "price": "$1599",
+        "participants": "4 persons",
+        "inclusions": "All inclusive",
+        "description": "Discover the exotic beauty of Thailand. This all-inclusive deal includes flights, accommodation, and all meals.",
+        "image": "images/deal12.jpg"
+    },
+    {
+        "id": 13,
+        "title": "Desert Adventure",
+        "location": "Dubai",
+        "duration": "7 days",
+        "price": "$999",
+        "participants": "2 persons",
+        "inclusions": "All inclusive",
+        "description": "Experience the wonders of Dubai with this desert adventure. Includes flights, hotel stay, and guided desert tours.",
+        "image": "images/deal13.jpg"
+    },
+    {
+        "id": 14,
+        "title": "City Lights",
+        "location": "Las Vegas",
+        "duration": "5 days",
+        "price": "$799",
+        "participants": "1 person",
+        "inclusions": "Breakfast included",
+        "description": "Enjoy the vibrant nightlife and entertainment in Las Vegas. This deal includes flights, accommodation, and breakfast.",
+        "image": "images/deal14.jpg"
+    },
+    {
+        "id": 15,
+        "title": "Family Fun",
+        "location": "Orlando",
+        "duration": "10 days",
+        "price": "$1499",
+        "participants": "4 persons",
+        "inclusions": "All inclusive",
+        "description": "Have fun with the whole family in Orlando. This all-inclusive deal includes flights, accommodation, and all meals.",
+        "image": "images/deal15.jpg"
+    },
+    {
+        "id": 16,
+        "title": "Island Getaway",
+        "location": "Bali",
+        "duration": "7 days",
+        "price": "$1099",
+        "participants": "3 persons",
+        "inclusions": "All inclusive",
+        "description": "Relax and unwind in Bali. This deal includes flights, hotel stay, and all meals.",
+        "image": "images/deal16.jpg"
+    },
+    {
+        "id": 17,
+        "title": "Winter Wonderland",
+        "location": "Switzerland",
+        "duration": "5 days",
+        "price": "$699",
+        "participants": "1 person",
+        "inclusions": "Breakfast included",
+        "description": "Experience the magic of winter in Switzerland. This deal includes flights, accommodation, and breakfast.",
+        "image": "images/deal17.jpg"
+    },
+    {
+        "id": 18,
+        "title": "Tropical Retreat",
+        "location": "Jamaica",
+        "duration": "10 days",
+        "price": "$1599",
+        "participants": "4 persons",
+        "inclusions": "All inclusive",
+        "description": "Escape to the tropical paradise of Jamaica. This all-inclusive deal includes flights, accommodation, and all meals.",
+        "image": "images/deal18.jpg"
+    }
+]

@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #007BFF;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 80px auto 20px; /* Adjusted margin to account for fixed header */
+    padding: 20px;
+}
+
+.login-container, .deals-container, .favorites-container, .drop-zone {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.drop-zone {
+    border: 2px dashed #007BFF;
+    text-align: center;
+    color: #007BFF;
+    font-size: 18px;
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.drop-zone.dragover {
+    background-color: #e6f7ff;
+}
+
+.success-message {
+    display: none;
+    color: green;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.deal, .favorite {
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: grab;
+    display: inline-block;
+    width: 30%; /* Set the width to 30% for three deals per line */
+    box-sizing: border-box;
+    vertical-align: top; /* Align the deals to the top */
+}
+
+.deal img, .favorite img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.deal p, .favorite p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.add-to-favorites {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff4081;
+    color: white;
+    cursor: pointer;
+}
+
+.add-to-favorites:hover {
+    background-color: #e91e63;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .deal, .favorite {
+        width: 100%;
+    }
+
+    input, button {
+        width: 100%;
+    }
+
+    .drop-zone {
+        width: 90%;
+        left: 5%;
+        right: 5%;
+        top: auto;
+        bottom: 10px;
+        transform: none;
+    }
+
+    #header ul {
+        flex-direction: column;
+    }
+
+    #header #mobile {
+        display: block;
+    }
+
+    #page-header {
+        padding: 50px 0;
+    }
+
+    #about-us {
+        flex-direction: column;
+    }
+
+    .about-content, .about-image {
+        padding: 20px 0;
+    }
+
+    .values-content, .team-content {
+        flex-direction: column;
+    }
+
+    .value-box, .team-member {
+        flex: 1 1 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-col {
+        flex: 1 1 100%;
+    }
+}

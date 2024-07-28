@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - DEALS</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #007BFF;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .header a:hover {
+            text-decoration: underline;
+        }
+
+        .header ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+        }
+
+        .header ul li {
+            margin: 0 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 80px auto 20px; /* Adjusted margin to account for fixed header */
+            padding: 20px;
+        }
+
+        .section-p1 {
+            padding: 60px 20px;
+        }
+
+        .about-header {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('img/about/header-bg.jpg') no-repeat center center/cover;
+            color: white;
+        }
+
+        .about-header h2 {
+            font-size: 48px;
+        }
+
+        .about-header p {
+            font-size: 24px;
+        }
+
+        #about-us {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        .about-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .about-text h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .about-image {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        #values {
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 60px 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        #values h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .values-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .value-box {
+            flex: 1 1 30%;
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .value-box i {
+            font-size: 50px;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        .value-box h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .value-box p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        #team {
+            text-align: center;
+            background-color: white;
+            padding: 60px 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        #team h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .team-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            flex: 1 1 30%;
+            background-color: #f9f9f9;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .team-member h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 50px 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .footer-col {
+            flex: 1 1 20%;
+            margin: 10px;
+        }
+
+        .footer-col img {
+            height: 40px;
+        }
+
+        .footer-col h4 {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        .footer-col p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .footer-col a {
+            display: block;
+            margin: 10px 0;
+            font-size: 16px;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .footer-col a:hover {
+            color: #ddd;
+        }
+
+        .footer-col .social {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .footer-col .social a {
+            margin: 0 10px;
+            font-size: 20px;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .footer-col .social a:hover {
+            color: #ddd;
+        }
+
+        .footer-col input {
+            padding: 10px;
+            width: 70%;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .footer-col button {
+            padding: 10px;
+            border: none;
+            background-color: #0056b3;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .footer-col button:hover {
+            background-color: #004494;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .deal, .favorite {
+                width: 100%;
+            }
+
+            input, button {
+                width: 100%;
+            }
+
+            .drop-zone {
+                width: 90%;
+                left: 5%;
+                right: 5%;
+                top: auto;
+                bottom: 10px;
+                transform: none;
+            }
+
+            #header ul {
+                flex-direction: column;
+            }
+
+            #header #mobile {
+                display: block;
+            }
+
+            #page-header {
+                padding: 50px 0;
+            }
+
+            #about-us {
+                flex-direction: column;
+            }
+
+            .about-content, .about-image {
+                padding: 20px 0;
+            }
+
+            .values-content, .team-content {
+                flex-direction: column;
+            }
+
+            .value-box, .team-member {
+                flex: 1 1 100%;
+            }
+
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-col {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="header" class="header">
+        <a href="main.html"><img src="img/logo.png" class="logo" alt="DEALS Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+        <h2>About Us</h2>
+        <p>Your gateway to amazing vacation deals</p>
+    </section>
+
+    <section id="about-us" class="section-p1">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>
+                    Welcome to DEALS, where adventure meets affordability. We are dedicated to bringing you the best vacation packages that include flights and accommodations. Our team of travel experts curates exclusive deals that provide exceptional value, so you can explore the world without breaking the bank.
+                </p>
+                <p>
+                    Founded in 2021, DEALS has helped thousands of travelers discover new destinations and create unforgettable memories. Our mission is to make travel accessible and enjoyable for everyone. Whether you're looking for a relaxing beach vacation, a cultural city tour, or an adventurous escape, we have the perfect deal for you.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="img/about/about-us.jpg" alt="Our Story">
+            </div>
+        </div>
+    </section>
+
+    <section id="values" class="section-p1">
+        <h2>Our Values</h2>
+        <div class="values-content">
+            <div class="value-box">
+                <i class="fas fa-globe"></i>
+                <h3>Global Reach</h3>
+                <p>Connecting you to destinations worldwide.</p>
+            </div>
+            <div class="value-box">
+                <i class="fas fa-handshake"></i>
+                <h3>Customer First</h3>
+                <p>Your satisfaction is our top priority.</p>
+            </div>
+            <div class="value-box">
+                <i class="fas fa-thumbs-up"></i>
+                <h3>Quality Service</h3>
+                <p>Providing top-notch service and support.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="section-p1">
+        <h2>Meet Our Team</h2>
+        <div class="team-content">
+            <div class="team-member">
+                <img src="img/team/member1.jpg" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>CEO & Founder</p>
+            </div>
+            <div class="team-member">
+                <img src="img/team/member2.jpg" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>Chief Travel Officer</p>
+            </div>
+            <div class="team-member">
+                <img src="img/team/member3.jpg" alt="Team Member 3">
+                <h3>Emily Johnson</h3>
+                <p>Head of Customer Service</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="footer-col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Israel, Kfar Yasif</p>
+            <p><strong>Phone:</strong> 0547133703</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>About</h4>
+            <a href="about.html">Our Story</a>
+            <a href="about.html">Mission</a>
+            <a href="about.html">Values</a>
+            <a href="about.html">Team</a>
+        </div>
+        <div class="footer-col">
+            <h4>Support</h4>
+            <a href="#">FAQs</a>
+            <a href="#">Help Center</a>
+            <a href="#">Contact Support</a>
+        </div>
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>Sign up for our newsletter to get the latest deals.</p>
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </footer>
+</body>
+</html>
