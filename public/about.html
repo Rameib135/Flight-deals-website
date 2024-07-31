@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
             margin: 0;
-            padding: 0;
+            padding: 1;
         }
 
         .header {
@@ -64,10 +64,12 @@
 
         .about-header h2 {
             font-size: 48px;
+            color: black;
         }
 
         .about-header p {
             font-size: 24px;
+            color: black;
         }
 
         #about-us {
@@ -99,10 +101,11 @@
         .about-image {
             flex: 1;
             padding: 20px;
+            text-align: center;
         }
 
         .about-image img {
-            width: 100%;
+            width: 50%;
             border-radius: 10px;
         }
 
@@ -282,29 +285,12 @@
                 padding: 10px;
             }
 
-            .deal, .favorite {
-                width: 100%;
-            }
-
-            input, button {
-                width: 100%;
-            }
-
-            .drop-zone {
-                width: 90%;
-                left: 5%;
-                right: 5%;
-                top: auto;
-                bottom: 10px;
-                transform: none;
-            }
-
-            #header ul {
+            .header ul {
                 flex-direction: column;
             }
 
-            #header #mobile {
-                display: block;
+            .header ul li {
+                margin: 5px 0;
             }
 
             #page-header {
@@ -317,6 +303,10 @@
 
             .about-content, .about-image {
                 padding: 20px 0;
+            }
+
+            .about-image img {
+                width: 100%; /* Adjust image size for mobile */
             }
 
             .values-content, .team-content {
@@ -334,13 +324,18 @@
 
             .footer-col {
                 flex: 1 1 100%;
+                margin: 10px 0;
+            }
+
+            .footer-col input {
+                width: 100%;
+                margin-right: 0;
             }
         }
     </style>
 </head>
 <body>
     <section id="header" class="header">
-        <a href="main.html"><img src="img/logo.png" class="logo" alt="DEALS Logo"></a>
         <div>
             <ul id="navbar">
                 <li><a href="main.html">Home</a></li>
@@ -368,7 +363,7 @@
                 </p>
             </div>
             <div class="about-image">
-                <img src="img/about/about-us.jpg" alt="Our Story">
+                <img src="images/about-us.jpg" alt="Our Story">
             </div>
         </div>
     </section>
@@ -398,19 +393,9 @@
         <h2>Meet Our Team</h2>
         <div class="team-content">
             <div class="team-member">
-                <img src="img/team/member1.jpg" alt="Team Member 1">
-                <h3>John Doe</h3>
+                <img src="images/mypic.png" alt="Team Member 1">
+                <h3>Rame Ibrahem</h3>
                 <p>CEO & Founder</p>
-            </div>
-            <div class="team-member">
-                <img src="img/team/member2.jpg" alt="Team Member 2">
-                <h3>Jane Smith</h3>
-                <p>Chief Travel Officer</p>
-            </div>
-            <div class="team-member">
-                <img src="img/team/member3.jpg" alt="Team Member 3">
-                <h3>Emily Johnson</h3>
-                <p>Head of Customer Service</p>
             </div>
         </div>
     </section>
@@ -422,10 +407,9 @@
             <p><strong>Address:</strong> Israel, Kfar Yasif</p>
             <p><strong>Phone:</strong> 0547133703</p>
             <div class="social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/rami.ibrahem.77?mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/rame_ibrahem4?igsh=eHZhbWw1eWcwa2cy"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/0547133703"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
         <div class="footer-col">
