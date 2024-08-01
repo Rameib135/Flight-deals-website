@@ -118,6 +118,6 @@ app.delete('/favorites', (req, res) => {
     }
 });
 
-app.listen(4006, () => {
-    console.log('Server is running on port 4006');
+app.listen(4008, () => {
+    console.log('Server is running on port 4008');
 });
