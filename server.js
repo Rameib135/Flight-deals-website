@@ -4,6 +4,10 @@ const cookieParser = require('cookie-parser');
 const sqlite3 = require('sqlite3').verbose();
 const app = express();
 
+const cors = require('cors');
+app.use(cors());
+
+
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(express.static('public'));
@@ -118,6 +122,6 @@ app.delete('/favorites', (req, res) => {
     }
 });
 
-app.listen(4008, () => {
-    console.log('Server is running on port 4008');
+app.listen(4010, () => {
+    console.log('Server is running on port 4010');
 });
