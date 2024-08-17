@@ -1,3 +1,4 @@
+// RAME IBRAHEM AND ALI KHATIB
 document.addEventListener('DOMContentLoaded', function () {
     const loginForm = document.getElementById('loginForm');
     const registerLink = document.getElementById('registerLink');

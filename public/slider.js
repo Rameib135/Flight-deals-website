@@ -1,3 +1,4 @@
+// RAME IBRAHEM AND ALI KHATIB
 let slideIndex = 0;
 showSlides(slideIndex);
 
